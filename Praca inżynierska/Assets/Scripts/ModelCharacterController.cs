@@ -74,7 +74,7 @@ public class ModelCharacterController : MonoBehaviour
     {
         if (canDoAction)
         {
-            modelAnimator.SetTrigger("attackTrigger");
+          //  modelAnimator.SetTrigger("attackTrigger");
         }
     }
 
@@ -82,7 +82,7 @@ public class ModelCharacterController : MonoBehaviour
     {
         if (canDoAction)
         {
-            modelAnimator.SetTrigger("kickTrigger");
+            //modelAnimator.SetTrigger("kickTrigger");
         }
     }
 
@@ -90,7 +90,7 @@ public class ModelCharacterController : MonoBehaviour
     {
         if (canDash)
         {
-            modelAnimator.SetTrigger("dashTrigger");
+           // modelAnimator.SetTrigger("dashTrigger");
         }
     }
 
@@ -136,16 +136,16 @@ public class ModelCharacterController : MonoBehaviour
         modelAnimator.applyRootMotion = true;
     }
 
-    public void EnableBonusAS()
-    {
-        modelAnimator.speed += GetComponent<PlayerHealth>().bonusAttackSpeed / 100.0f;
-    }
+    //public void EnableBonusAS()
+    //{
+    //    modelAnimator.speed += GetComponent<PlayerHealth>().bonusAttackSpeed / 100.0f;
+    //}
 
-    public void DisableBonusAS()
-    {
-        //modelAnimator.speed -= GetComponent<PlayerHealth>().bonusAttackSpeed / 100.0f;
-        modelAnimator.speed = 1.0f;
-    }
+    //public void DisableBonusAS()
+    //{
+    //    //modelAnimator.speed -= GetComponent<PlayerHealth>().bonusAttackSpeed / 100.0f;
+    //    modelAnimator.speed = 1.0f;
+    //}
 
     #endregion
 }
